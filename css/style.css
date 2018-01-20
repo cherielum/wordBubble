@@ -1,0 +1,67 @@
+body {
+  background: #eee;
+}
+
+* {
+  position: absolute;
+  margin: 0; padding: 0;
+}
+
+input[type="text"] {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 18px;
+  width: 200px;
+  text-transform: uppercase;
+  top: 30px;
+  left: 130px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100px;
+  border: 0;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  background:rgb(220, 145, 237);
+  font-size: 18px;
+  top: 30px;
+  left: 350px;
+  cursor: pointer;
+}
+
+form {
+  width: 600px;
+  height: 100px;
+}
+
+#home {
+  z-index: 100;
+}
+
+#h1{
+  z-index: 100;
+  width: 500px;
+  margin-top: 40px;
+  margin-left: 10px;
+  animation-name: firstBoxes; /*can be any name*/
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  /* animation-delay: 2s; */
+  animation-direction: alternate;
+}
+
+
+@keyframes firstBoxes {
+  0% {color: rgb(234, 123, 12);}
+  25% {color: rgb(255, 255, 0);}
+  50% {color: rgb(16, 234, 16);}
+  75% {color: rgb(200, 88, 201);}
+  100% {color: rgb(225, 18, 229);}
+  0% {background-color: rgb(16, 16, 15);}
+  25% {background-color: rgb(7, 7, 2);}
+  50% {background-color: rgb(4, 17, 4);}
+  75% {background-color: rgb(13, 6, 13);}
+  100% {background-color: rgb(3, 1, 3);}
+}
